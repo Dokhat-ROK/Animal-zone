@@ -1,0 +1,348 @@
+body {
+    position: relative;
+    overflow: hidden;
+}
+
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.main-pict {
+    position: absolute;
+    
+    width: auto;
+    height: 1440px;
+    
+    top: -200px;
+    left: -250px;
+}
+
+.area {
+    position: absolute;
+    margin: 100px 150px 0 150px;
+    width: 1600px;
+    height: 700px;
+
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    gap: 50px;
+}
+
+.area-element {
+    display: grid;
+    grid-template-columns: 200px 300px;
+    overflow: hidden;
+
+    margin:0;
+    padding: 0;
+
+    width: 500px;
+    height: 200px;
+
+    border-radius: 30px;
+
+    flex-direction: column;
+}
+
+.area-element img {
+    width: 300px;
+    height: 200px;
+}
+
+.description {
+    display: flex; 
+    flex-direction: column;
+
+    margin: 0;
+    padding: 0;
+
+    width: 200px;
+    height: 200px;
+
+    justify-content: space-between;
+}
+
+a {
+    text-decoration: none;
+}
+
+.description h1 {
+    text-align: center;
+}
+
+.description p {
+    padding-left: 10px;
+}
+
+#arctical-desert, #tundra, #forest-tundra, #taiga, #forest, #forest-steppe, #steppe, #half-desert, #tropical {
+    width: 500px;
+    height: 200px;
+    transition-duration: 0.5s;
+}
+
+#arctical-desert:hover {
+    box-shadow: 
+    0 0 5px 10px #b075f0,
+    inset 0 0 5px 10px #b075f0;
+}
+
+#tundra:hover {
+    box-shadow: 
+    0 0 5px 10px #afe1fc,
+    inset 0 0 5px 10px #afe1fc;
+}
+
+#forest-tundra:hover {
+    box-shadow: 
+    0 0 5px 10px #1cd497,
+    inset 0 0 5px 10px #1cd497;
+}
+
+#taiga:hover {
+    box-shadow: 
+    0 0 5px 10px #3a9b42,
+    inset 0 0 5px 10px #3a9b42;
+}
+
+#forest:hover {
+    box-shadow: 
+    0 0 5px 10px #b6316b,
+    inset 0 0 5px 10px #b6316b;
+}
+
+#forest-steppe:hover {
+    box-shadow: 
+    0 0 5px 10px #91a520,
+    inset 0 0 5px 10px #91a520;
+}
+
+#steppe:hover {
+    box-shadow: 
+    0 0 5px 10px #d8a24c,
+    inset 0 0 5px 10px #d8a24c;
+}
+
+#half-desert:hover {
+    box-shadow: 
+    0 0 5px 10px #caa673,
+    inset 0 0 5px 10px #caa673;
+}
+
+#tropical:hover {
+    box-shadow: 
+    0 0 5px 10px #1eb6a9,
+    inset 0 0 5px 10px #1eb6a9;
+}
+
+header {
+    width:100%;
+    text-align:center;
+    display: flex;
+
+    font-size: 24px;
+
+
+    color: #755d37;
+}
+header h1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    position: absolute;
+
+    top: 880px;
+    left: -10px;
+
+    width: 101%;
+    margin:0;
+
+    display: flex;
+    justify-content: space-between;
+
+    font-size: 24px;
+    color: #39bbd4;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer p {
+    padding: 0 10px;
+}
+
+header a {
+    width: 200px;
+    height: 80px;
+    font-size: 24px;
+
+    margin: 30px 0 0 30px;
+
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+header p {
+    margin: 0;
+}
+
+#back-arctical-desert, #back-tundra, #back-forest-tundra, #back-taiga, #back-forest, #back-forest-steppe, #back-steppe, #back-half-desert, #back-tropical {
+    width: 200px;
+    height: 80px;
+    transition-duration: 0.25s;
+}
+
+#back-arctical-desert:hover {
+    box-shadow: 
+    0 0 5px 5px #b075f0;
+}
+
+#back-tundra:hover {
+    box-shadow: 
+    0 0 5px 5px #afe1fc;
+}
+
+#back-forest-tundra:hover {
+    box-shadow: 
+    0 0 5px 5px #1cd497;
+}
+
+#back-taiga:hover {
+    box-shadow: 
+    0 0 5px 5px #3a9b42;
+}
+
+#back-forest:hover {
+    box-shadow: 
+    0 0 5px 5px #b6316b;
+}
+
+#back-forest-steppe:hover {
+    box-shadow: 
+    0 0 5px 5px #91a520;
+}
+
+#back-steppe:hover {
+    box-shadow: 
+    0 0 5px 5px #d8a24c;
+}
+
+#back-half-desert:hover {
+    box-shadow: 
+    0 0 5px 5px #caa673;
+}
+
+#back-tropical:hover {
+    box-shadow: 
+    0 0 5px 5px #1eb6a9;
+}
+
+.page-animal {
+    position: absolute;
+
+    top: 200px;
+    height: 560px;
+    width: auto;
+
+    display: flex;
+}
+
+.text-animal {
+    width: 600px;
+    height: 560px;
+
+    font-size: 20px;
+    text-align:justify;
+    padding-left: 50px;
+    padding-top: 0;
+}
+
+.text-animal h2 {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.pict-and-bottons {
+    position: relative;
+    width: 1120px;
+    height: 560px;
+    margin: 0 100px;
+}
+
+.pict-animal {
+    position: absolute;
+    left: 60px;
+    width: 1000px;
+    height: 560px;
+}
+
+.back-botton {
+    position: absolute;
+    cursor: pointer;
+    width: 60px;
+    height: 560px;
+}
+
+.forward-botton {
+    position: absolute;
+    left: 1060px;
+    cursor: pointer;
+    width: 60px;
+    height: 560px;
+}
+
+#botton-arctical-desert, #botton-tundra, #botton-forest-tundra, #botton-taiga, #botton-forest, #botton-forest-steppe, #botton-steppe, #botton-half-desert, #botton-tropical {
+    width: 60px;
+    height: 560px;
+    transition-duration: 0.5s;
+}
+
+#botton-arctical-desert:hover {
+    box-shadow: 
+    0 0 5px 5px #b075f0;
+}
+
+#botton-tundra:hover {
+    box-shadow: 
+    0 0 5px 5px #afe1fc;
+}
+
+#botton-forest-tundra:hover {
+    box-shadow: 
+    0 0 5px 5px #1cd497;
+}
+
+#botton-taiga:hover {
+    box-shadow: 
+    0 0 5px 5px #3a9b42;
+}
+
+#botton-forest:hover {
+    box-shadow: 
+    0 0 5px 5px #b6316b;
+}
+
+#botton-forest-steppe:hover {
+    box-shadow: 
+    0 0 5px 5px #91a520;
+}
+
+#botton-steppe:hover {
+    box-shadow: 
+    0 0 5px 5px #d8a24c;
+}
+
+#botton-half-desert:hover {
+    box-shadow: 
+    0 0 5px 5px #caa673;
+}
+
+#botton-tropical:hover {
+    box-shadow: 
+    0 0 5px 5px #1eb6a9;
+}
